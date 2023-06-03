@@ -7,4 +7,8 @@ require 'prime'
 #
 # Find the sum of all the primes below two million.
 
-(2..2_00_00).filter { |i| Prime.prime?(i) }.sum
+# First solution => (2..2_00_00).filter { |i| Prime.prime?(i) }.sum
+#
+# Much better solution:
+
+(Prime.to_a 2_000_000).sum ## 🙀
