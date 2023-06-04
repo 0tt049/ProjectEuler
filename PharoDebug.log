@@ -1,0 +1,2200 @@
+THERE_BE_DRAGONS_HERE
+
+3 June 2023 4:24:31.626627 pm
+
+VM: unix - x86_64 - linux-gnu - CoInterpreter * VMMaker-tonel.1 uuid: ad0a8882-d297-0d00-90d3-62ff092bce84 Mar 30 2022
+StackToRegisterMappingCogit * VMMaker-tonel.1 uuid: ad0a8882-d297-0d00-90d3-62ff092bce84 Mar 30 2022
+v9.0.14 - Commit: 93600e1 - Date: 2022-03-30 16:40:05 +0200
+
+Image: Pharo10.0.0 [Build information: Pharo-10.0.0+build.514.sha.06180671d95a16c446fe24e3fedb0916c1bcb31a (64 Bit)]
+
+Process>>doTerminationFromAnotherProcess
+	Receiver: a Process in Process>>endProcess
+	Arguments and temporary variables: 
+		outerMost: 	nil
+		ctxt: 	nil
+		oldList: 	nil
+		unwindBlock: 	nil
+	Receiver's instance variables: 
+		nextLink: 	nil
+		suspendedContext: 	Process>>endProcess
+		priority: 	79
+		myList: 	nil
+		name: 	'Pharo Launcher image description save process'
+		env: 	nil
+		effectiveProcess: 	nil
+		terminating: 	true
+		level: 	nil
+
+
+Process>>terminate
+	Receiver: a Process in Process>>endProcess
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		nextLink: 	nil
+		suspendedContext: 	Process>>endProcess
+		priority: 	79
+		myList: 	nil
+		name: 	'Pharo Launcher image description save process'
+		env: 	nil
+		effectiveProcess: 	nil
+		terminating: 	true
+		level: 	nil
+
+
+PhLImageDescriptionUpdater>>terminateProcess
+	Receiver: a PhLImageDescriptionUpdater
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		image: 	Image (myNewImage)
+		description: 	'There is no description'
+		process: 	a Process in Process>>endProcess
+		saveBlock: 	nil
+
+
+PhLImageDescriptionUpdater>>image:description:
+	Receiver: a PhLImageDescriptionUpdater
+	Arguments and temporary variables: 
+		aPhLImage: 	Image (Pharo 11.0 - 64bit (stable))
+		aString: 	''
+	Receiver's instance variables: 
+		image: 	Image (myNewImage)
+		description: 	'There is no description'
+		process: 	a Process in Process>>endProcess
+		saveBlock: 	nil
+
+
+PhLImageDescriptionUpdater class>>image:description:
+	Receiver: PhLImageDescriptionUpdater
+	Arguments and temporary variables: 
+		aPhLImage: 	Image (Pharo 11.0 - 64bit (stable))
+		aString: 	''
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#doSave->PhLImageDescriptionUpdater>>#doSave #im...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	{PhLImageDescriptionUpdaterMock}
+		name: 	#PhLImageDescriptionUpdater
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'PharoLauncher-Core-Model'
+		Default: 	a PhLImageDescriptionUpdater
+
+
+PhLImageDetailPresenter>>updateImageDescription:
+	Receiver: a PhLImageDetailPresenter
+	Arguments and temporary variables: 
+		text: 	''
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SpMorphicBoxAdapter a SpMorphicGridAdapter)
+		announcer: 	an Announcer
+		owner: 	a PhLImagesPresenter
+		adapter: 	nil
+		needRebuild: 	true
+		eventHandler: 	nil
+		application: 	nil
+		focusOrder: 	nil
+		contextKeyBindings: 	an ObservableValueHolder[ nil ]
+		windowIcon: 	an ObservableValueHolder[ nil ]
+		aboutText: 	an ObservableValueHolder[ nil ]
+		askOkToClose: 	an ObservableValueHolder[ false ]
+		titleHolder: 	an ObservableValueHolder[ 'Untitled window' ]
+		additionalSubpresentersMap: 	nil
+		layout: 	an ObservableValueHolder[ a SpBoxLayout ]
+		visible: 	an ObservableValueHolder[ true ]
+		extent: 	an ObservableValueHolder[ nil ]
+		styles: 	#()
+		announcingObject: 	a NewValueHolder[ Image (Pharo 11.0 - 64bit (stable)) ]
+		description: 	a SpTextPresenter
+		imageLabel: 	a SpLabelPresenter
+		template: 	a SpLabelPresenter
+		initializationScript: 	a SpLabelPresenter
+		location: 	a SpLabelPresenter
+		vm: 	a SpTextInputFieldPresenter
+		templateUrl: 	a SpLabelPresenter
+		shouldRunInitializationScript: 	a SpCheckBoxPresenter
+		updating: 	false
+
+
+[ :text | self updateImageDescription: text ] in PhLImageDetailPresenter>>connectPresenters
+	Receiver: a PhLImageDetailPresenter
+	Arguments and temporary variables: 
+		text: 	''
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SpMorphicBoxAdapter a SpMorphicGridAdapter)
+		announcer: 	an Announcer
+		owner: 	a PhLImagesPresenter
+		adapter: 	nil
+		needRebuild: 	true
+		eventHandler: 	nil
+		application: 	nil
+		focusOrder: 	nil
+		contextKeyBindings: 	an ObservableValueHolder[ nil ]
+		windowIcon: 	an ObservableValueHolder[ nil ]
+		aboutText: 	an ObservableValueHolder[ nil ]
+		askOkToClose: 	an ObservableValueHolder[ false ]
+		titleHolder: 	an ObservableValueHolder[ 'Untitled window' ]
+		additionalSubpresentersMap: 	nil
+		layout: 	an ObservableValueHolder[ a SpBoxLayout ]
+		visible: 	an ObservableValueHolder[ true ]
+		extent: 	an ObservableValueHolder[ nil ]
+		styles: 	#()
+		announcingObject: 	a NewValueHolder[ Image (Pharo 11.0 - 64bit (stable)) ]
+		description: 	a SpTextPresenter
+		imageLabel: 	a SpLabelPresenter
+		template: 	a SpLabelPresenter
+		initializationScript: 	a SpLabelPresenter
+		location: 	a SpLabelPresenter
+		vm: 	a SpTextInputFieldPresenter
+		templateUrl: 	a SpLabelPresenter
+		shouldRunInitializationScript: 	a SpCheckBoxPresenter
+		updating: 	false
+
+
+FullBlockClosure(BlockClosure)>>cull:
+	Receiver: [ :text | self updateImageDescription: text ]
+	Arguments and temporary variables: 
+		anArg: 	''
+	Receiver's instance variables: 
+		outerContext: 	PhLImageDetailPresenter>>connectPresenters
+		startpc: 	a CompiledBlock: [ :text | self updateImageDescription: text ]
+		numArgs: 	1
+		receiver: 	a PhLImageDetailPresenter
+
+
+FullBlockClosure(BlockClosure)>>cull:cull:
+	Receiver: [ :text | self updateImageDescription: text ]
+	Arguments and temporary variables: 
+		firstArg: 	''
+		secondArg: 	'There is no description'
+	Receiver's instance variables: 
+		outerContext: 	PhLImageDetailPresenter>>connectPresenters
+		startpc: 	a CompiledBlock: [ :text | self updateImageDescription: text ]
+		numArgs: 	1
+		receiver: 	a PhLImageDetailPresenter
+
+
+[ :block | block cull: self value cull: oldValue ] in ObservableValueHolder>>valueChanged:
+	Receiver: an ObservableValueHolder[ '' ]
+	Arguments and temporary variables: 
+		oldValue: 	'There is no description'
+		block: 	[ :text | self updateImageDescription: text ]
+	Receiver's instance variables: 
+		subscriptions: 	an OrderedCollection([ self changed: #getText ] [ :text | self u...etc...
+		lock: 	true
+		value: 	''
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection([ self changed: #getText ] [ :text | self updateImageDescription: tex...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :block | block cull: self value cull: oldValue ]
+		index: 	2
+	Receiver's instance variables: 
+		array: 	an Array([ self changed: #getText ] [ :text | self updateImageDescriptio...etc...
+		firstIndex: 	1
+		lastIndex: 	2
+
+
+ObservableValueHolder>>valueChanged:
+	Receiver: an ObservableValueHolder[ '' ]
+	Arguments and temporary variables: 
+		oldValue: 	'There is no description'
+	Receiver's instance variables: 
+		subscriptions: 	an OrderedCollection([ self changed: #getText ] [ :text | self u...etc...
+		lock: 	true
+		value: 	''
+
+
+[ | oldValue |
+	oldValue := value.
+	value := anObject.
+	self valueChanged: oldValue ] in ObservableValueHolder>>value:
+	Receiver: an ObservableValueHolder[ '' ]
+	Arguments and temporary variables: 
+		anObject: 	''
+		oldValue: 	'There is no description'
+	Receiver's instance variables: 
+		subscriptions: 	an OrderedCollection([ self changed: #getText ] [ :text | self u...etc...
+		lock: 	true
+		value: 	''
+
+
+FullBlockClosure(BlockClosure)>>ensure:
+	Receiver: [ | oldValue |
+	oldValue := value.
+	value := anObject.
+	self valueChanged: oldValue ]
+	Arguments and temporary variables: 
+		aBlock: 	[ lock := false ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	ObservableValueHolder>>value:
+		startpc: 	a CompiledBlock: [ | oldValue |
+	oldValue := value.
+	value := anObject...etc...
+		numArgs: 	0
+		receiver: 	an ObservableValueHolder[ '' ]
+
+
+ObservableValueHolder>>value:
+	Receiver: an ObservableValueHolder[ '' ]
+	Arguments and temporary variables: 
+		anObject: 	''
+	Receiver's instance variables: 
+		subscriptions: 	an OrderedCollection([ self changed: #getText ] [ :text | self u...etc...
+		lock: 	true
+		value: 	''
+
+
+SpTextPresenter(SpAbstractTextPresenter)>>text:
+	Receiver: a SpTextPresenter
+	Arguments and temporary variables: 
+		aString: 	''
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SpMorphicTextAdapter)
+		announcer: 	an Announcer
+		owner: 	a PhLImageDetailPresenter
+		adapter: 	nil
+		needRebuild: 	true
+		eventHandler: 	nil
+		application: 	nil
+		focusOrder: 	nil
+		contextKeyBindings: 	an ObservableValueHolder[ nil ]
+		windowIcon: 	an ObservableValueHolder[ nil ]
+		aboutText: 	an ObservableValueHolder[ nil ]
+		askOkToClose: 	an ObservableValueHolder[ false ]
+		titleHolder: 	an ObservableValueHolder[ 'Text' ]
+		additionalSubpresentersMap: 	nil
+		layout: 	an ObservableValueHolder[ a SpAbstractWidgetLayout ]
+		visible: 	an ObservableValueHolder[ true ]
+		extent: 	an ObservableValueHolder[ nil ]
+		styles: 	#()
+		borderWidth: 	an ObservableValueHolder[ nil ]
+		borderColor: 	an ObservableValueHolder[ nil ]
+		dragEnabled: 	an ObservableValueHolder[ false ]
+		dropEnabled: 	an ObservableValueHolder[ false ]
+		color: 	an ObservableValueHolder[ nil ]
+		help: 	an ObservableValueHolder[ nil ]
+		enabled: 	an ObservableValueHolder[ true ]
+		wantsDrop: 	an ObservableValueHolder[ [ :transfer | self dropEnabled ] ]
+		acceptDrop: 	an ObservableValueHolder[ [ :transfer | ] ]
+		deferredActions: 	nil
+		hasUnacceptedEdits: 	an ObservableValueHolder[ false ]
+		selection: 	an ObservableValueHolder[ (1 to: 0) ]
+		wantsVisualFeedback: 	an ObservableValueHolder[ true ]
+		askBeforeDiscardingEdits: 	an ObservableValueHolder[ true ]
+		text: 	an ObservableValueHolder[ '' ]
+		actionToPerform: 	an ObservableValueHolder[ [ :txt |  ] ]
+		readSelection: 	an ObservableValueHolder[ [ selection ] ]
+		placeholder: 	an ObservableValueHolder[ '' ]
+		contextMenu: 	an ObservableValueHolder[ nil ]
+		scrollValue: 	an ObservableValueHolder[ (0@0) ]
+		editionContextMenu: 	an ObservableValueHolder[ true ]
+		editable: 	an ObservableValueHolder[ true ]
+		wrapWord: 	an ObservableValueHolder[ true ]
+		undoRedoHistory: 	true
+		wrapScrollBars: 	true
+		propagateNaturalHeight: 	false
+		propagateNaturalWidth: 	false
+		scrollBarStyles: 	#()
+
+
+[
+		self presenter text: aString.
+		"Raise an announcement"
+		self presenter changed: #clearUserEdits] in SpMorphicTextAdapter(SpMorphicBaseTextAdapter)>>accept:notifying:
+	Receiver: a SpMorphicTextAdapter
+	Arguments and temporary variables: 
+		aString: 	''
+		aNotifyier: 	a SpRubScrolledTextMorph(80463104)
+	Receiver's instance variables: 
+		dependents: 	nil
+		announcer: 	nil
+		model: 	a SpTextPresenter
+		widget: 	nil
+		selector: 	nil
+		owner: 	a SpTextPresenter
+		unsubscribed: 	false
+		selection: 	(1 to: 23)
+		updating: 	true
+
+
+FullBlockClosure(BlockClosure)>>ensure:
+	Receiver: [
+		self presenter text: aString.
+		"Raise an announcement"
+		self presenter changed: #cle...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+		updating := false ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	SpMorphicTextAdapter(SpMorphicBaseTextAdapter)>>accept:notifying:...etc...
+		startpc: 	a CompiledBlock: [
+		self presenter text: aString.
+		"Raise an announc...etc...
+		numArgs: 	0
+		receiver: 	a SpMorphicTextAdapter
+
+
+SpMorphicTextAdapter(SpMorphicBaseTextAdapter)>>accept:notifying:
+	Receiver: a SpMorphicTextAdapter
+	Arguments and temporary variables: 
+		aString: 	''
+		aNotifyier: 	a SpRubScrolledTextMorph(80463104)
+	Receiver's instance variables: 
+		dependents: 	nil
+		announcer: 	nil
+		model: 	a SpTextPresenter
+		widget: 	nil
+		selector: 	nil
+		owner: 	a SpTextPresenter
+		unsubscribed: 	false
+		selection: 	(1 to: 23)
+		updating: 	true
+
+
+SpMorphicTextAdapter>>accept:notifying:
+	Receiver: a SpMorphicTextAdapter
+	Arguments and temporary variables: 
+		aString: 	a Text for ''
+		aNotifyier: 	a SpRubScrolledTextMorph(80463104)
+	Receiver's instance variables: 
+		dependents: 	nil
+		announcer: 	nil
+		model: 	a SpTextPresenter
+		widget: 	nil
+		selector: 	nil
+		owner: 	a SpTextPresenter
+		unsubscribed: 	false
+		selection: 	(1 to: 23)
+		updating: 	true
+
+
+SpRubScrolledTextMorph(RubScrolledTextMorph)>>acceptTextInModel
+	Receiver: a SpRubScrolledTextMorph(80463104)
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (50@40)
+		owner: 	nil
+		submorphs: 	an Array(a RubTextScrollPane(480924416) a RubGhostTextDisplayer(8449...etc...
+		fullBounds: 	nil
+		color: 	Color white
+		extension: 	a MorphExtension (141469696) [other:  (announcer -> an Announcer) (d...etc...
+		hasEditingConflicts: 	false
+		hasUnacceptedEdits: 	false
+		alwaysAccept: 	nil
+		setTextSelector: 	#accept:notifying:
+		getTextSelector: 	#getText
+		getSelectionSelector: 	#readSelection
+		setSelectionSelector: 	#setSelection:
+		autoAccept: 	true
+		scrollPane: 	a RubTextScrollPane(480924416)
+		rulers: 	a SortedCollection(a RubGhostTextDisplayer(844908288))
+		enabled: 	true
+		highlights: 	an OrderedCollection()
+		getBackgroundColorSelector: 	nil
+		askBeforeDiscardingEdits: 	true
+
+
+SpRubScrolledTextMorph(RubScrolledTextMorph)>>acceptContents
+	Receiver: a SpRubScrolledTextMorph(80463104)
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (50@40)
+		owner: 	nil
+		submorphs: 	an Array(a RubTextScrollPane(480924416) a RubGhostTextDisplayer(8449...etc...
+		fullBounds: 	nil
+		color: 	Color white
+		extension: 	a MorphExtension (141469696) [other:  (announcer -> an Announcer) (d...etc...
+		hasEditingConflicts: 	false
+		hasUnacceptedEdits: 	false
+		alwaysAccept: 	nil
+		setTextSelector: 	#accept:notifying:
+		getTextSelector: 	#getText
+		getSelectionSelector: 	#readSelection
+		setSelectionSelector: 	#setSelection:
+		autoAccept: 	true
+		scrollPane: 	a RubTextScrollPane(480924416)
+		rulers: 	a SortedCollection(a RubGhostTextDisplayer(844908288))
+		enabled: 	true
+		highlights: 	an OrderedCollection()
+		getBackgroundColorSelector: 	nil
+		askBeforeDiscardingEdits: 	true
+
+
+SpRubScrolledTextMorph(RubScrolledTextMorph)>>textChanged
+	Receiver: a SpRubScrolledTextMorph(80463104)
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (50@40)
+		owner: 	nil
+		submorphs: 	an Array(a RubTextScrollPane(480924416) a RubGhostTextDisplayer(8449...etc...
+		fullBounds: 	nil
+		color: 	Color white
+		extension: 	a MorphExtension (141469696) [other:  (announcer -> an Announcer) (d...etc...
+		hasEditingConflicts: 	false
+		hasUnacceptedEdits: 	false
+		alwaysAccept: 	nil
+		setTextSelector: 	#accept:notifying:
+		getTextSelector: 	#getText
+		getSelectionSelector: 	#readSelection
+		setSelectionSelector: 	#setSelection:
+		autoAccept: 	true
+		scrollPane: 	a RubTextScrollPane(480924416)
+		rulers: 	a SortedCollection(a RubGhostTextDisplayer(844908288))
+		enabled: 	true
+		highlights: 	an OrderedCollection()
+		getBackgroundColorSelector: 	nil
+		askBeforeDiscardingEdits: 	true
+
+
+RubTextScrollPane>>textChanged
+	Receiver: a RubTextScrollPane(480924416)
+	Arguments and temporary variables: 
+		o: 	a SpRubScrolledTextMorph(80463104)
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (50@40)
+		owner: 	a SpRubScrolledTextMorph(80463104)
+		submorphs: 	an Array(a RubScrollBar(981101056) a TransformWithLayoutMorph(989494...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (324119808) [other:  (announcer -> an Announcer)]
+		scroller: 	a TransformWithLayoutMorph(989494528)
+		hScrollbar: 	a RubScrollBar(392835584)
+		vScrollbar: 	a RubScrollBar(981101056)
+		drawFocusBorder: 	true
+
+
+RubEditingArea(RubAbstractTextArea)>>paragraphReplacedTextFrom:to:with:
+	Receiver: a RubEditingArea(1025884160)
+	Arguments and temporary variables: 
+		start: 	1
+		stop: 	23
+		aText: 	a Text for ''
+		sp: 	a RubTextScrollPane(480924416)
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (37@31)
+		owner: 	a TransformWithLayoutMorph(989494528)
+		submorphs: 	an Array(a RubCursor(599221504) a RubPrimarySelectionMorph(494208256...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (768645632) [other:  (announcer -> an Announcer)]
+		model: 	a SpMorphicTextAdapter
+		paragraph: 	a RubCurrentLineBarDecorator
+		editor: 	a RubTextEditor
+		scrollPane: 	a RubTextScrollPane(480924416)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Sans Pro
+		textColor: 	nil
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubPlainTextMode
+		cursor: 	a RubCursor(599221504)
+		segments: 	nil
+		embeddedMorphs: 	nil
+		getMenuPolicy: 	a RubPluggableGetMenuPolicy
+		mouseDownPoint: 	nil
+		completionEngine: 	nil
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubTextEditor
+
+
+[ 
+			self composer emphasisHere: textArea emphasisHere.
+			self composer replaceFrom: start to: stop with: aText.
+			self text: self composer text.
+			textArea paragraphWasComposedFrom: start to: stop.
+			textArea paragraphReplacedTextFrom: start to: stop with: aText ] in RubParagraph>>replaceFrom:to:with:
+	Receiver: a RubParagraph
+	Arguments and temporary variables: 
+		start: 	1
+		stop: 	23
+		aText: 	a Text for ''
+	Receiver's instance variables: 
+		text: 	a Text for ''
+		composer: 	a RubTextComposer
+		container: 	(0@0) corner: (37@126)
+		drawingEnabled: 	false
+		textArea: 	a RubEditingArea(1025884160)
+
+
+FullBlockClosure(BlockClosure)>>ensure:
+	Receiver: [ 
+			self composer emphasisHere: textArea emphasisHere.
+			self composer replaceFrom: sta...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ self enableDrawing ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	RubParagraph>>replaceFrom:to:with:
+		startpc: 	a CompiledBlock: [ 
+			self composer emphasisHere: textArea emphasisHe...etc...
+		numArgs: 	0
+		receiver: 	a RubParagraph
+
+
+RubParagraph>>disableDrawingWhile:
+	Receiver: a RubParagraph
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+			self composer emphasisHere: textArea emphasisHere.
+			self compos...etc...
+	Receiver's instance variables: 
+		text: 	a Text for ''
+		composer: 	a RubTextComposer
+		container: 	(0@0) corner: (37@126)
+		drawingEnabled: 	false
+		textArea: 	a RubEditingArea(1025884160)
+
+
+RubParagraph>>replaceFrom:to:with:
+	Receiver: a RubParagraph
+	Arguments and temporary variables: 
+		start: 	1
+		stop: 	23
+		aText: 	a Text for ''
+	Receiver's instance variables: 
+		text: 	a Text for ''
+		composer: 	a RubTextComposer
+		container: 	(0@0) corner: (37@126)
+		drawingEnabled: 	false
+		textArea: 	a RubEditingArea(1025884160)
+
+
+RubCurrentLineBarDecorator(RubParagraphDecorator)>>replaceFrom:to:with:
+	Receiver: a RubCurrentLineBarDecorator
+	Arguments and temporary variables: 
+		start: 	1
+		stop: 	23
+		aText: 	a Text for ''
+	Receiver's instance variables: 
+		next: 	a RubExtraSelectionDecorator
+
+
+RubEditingArea(RubAbstractTextArea)>>privateReplaceFrom:to:with:
+	Receiver: a RubEditingArea(1025884160)
+	Arguments and temporary variables: 
+		start: 	1
+		stop: 	23
+		aText: 	a Text for ''
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (37@31)
+		owner: 	a TransformWithLayoutMorph(989494528)
+		submorphs: 	an Array(a RubCursor(599221504) a RubPrimarySelectionMorph(494208256...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (768645632) [other:  (announcer -> an Announcer)]
+		model: 	a SpMorphicTextAdapter
+		paragraph: 	a RubCurrentLineBarDecorator
+		editor: 	a RubTextEditor
+		scrollPane: 	a RubTextScrollPane(480924416)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Sans Pro
+		textColor: 	nil
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubPlainTextMode
+		cursor: 	a RubCursor(599221504)
+		segments: 	nil
+		embeddedMorphs: 	nil
+		getMenuPolicy: 	a RubPluggableGetMenuPolicy
+		mouseDownPoint: 	nil
+		completionEngine: 	nil
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubTextEditor
+
+
+RubTextEditor>>zapSelectionWith:
+	Receiver: a RubTextEditor
+	Arguments and temporary variables: 
+		aText: 	''
+		start: 	1
+		stop: 	24
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	nil
+		textArea: 	a RubEditingArea(1025884160)
+
+
+RubTextEditor>>replace:with:and:
+	Receiver: a RubTextEditor
+	Arguments and temporary variables: 
+		xoldInterval: 	(1 to: 23)
+		newText: 	''
+		selectingBlock: 	[]
+		prevSel: 	a Text for 'There is no description'
+		currInterval: 	(1 to: 23)
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	nil
+		textArea: 	a RubEditingArea(1025884160)
+
+
+RubTextEditor>>replaceSelectionWith:
+	Receiver: a RubTextEditor
+	Arguments and temporary variables: 
+		aText: 	''
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	nil
+		textArea: 	a RubEditingArea(1025884160)
+
+
+[ 
+					| s |
+					s := self validateTextFrom: aStringOrText.
+					s = self text
+						ifFalse: [ self selectAll.
+							self editor replaceSelectionWith: s.
+							self deselect ] ] in [ self
+				beEditableWhile: [ 
+					| s |
+					s := self validateTextFrom: aStringOrText.
+					s = self text
+						ifFalse: [ self selectAll.
+							self editor replaceSelectionWith: s.
+							self deselect ] ] ] in RubEditingArea(RubAbstractTextArea)>>updateTextWith:
+	Receiver: a RubEditingArea(1025884160)
+	Arguments and temporary variables: 
+		aStringOrText: 	''
+		s: 	''
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (37@31)
+		owner: 	a TransformWithLayoutMorph(989494528)
+		submorphs: 	an Array(a RubCursor(599221504) a RubPrimarySelectionMorph(494208256...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (768645632) [other:  (announcer -> an Announcer)]
+		model: 	a SpMorphicTextAdapter
+		paragraph: 	a RubCurrentLineBarDecorator
+		editor: 	a RubTextEditor
+		scrollPane: 	a RubTextScrollPane(480924416)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Sans Pro
+		textColor: 	nil
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubPlainTextMode
+		cursor: 	a RubCursor(599221504)
+		segments: 	nil
+		embeddedMorphs: 	nil
+		getMenuPolicy: 	a RubPluggableGetMenuPolicy
+		mouseDownPoint: 	nil
+		completionEngine: 	nil
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubTextEditor
+
+
+FullBlockClosure(BlockClosure)>>ensure:
+	Receiver: [ 
+					| s |
+					s := self validateTextFrom: aStringOrText.
+					s = self text
+						ifF...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ self readOnly:  wasEditable]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	[ self
+				beEditableWhile: [ 
+					| s |
+					s := self validate...etc...
+		startpc: 	a CompiledBlock: [ 
+					| s |
+					s := self validateTextFrom: aStrin...etc...
+		numArgs: 	0
+		receiver: 	a RubEditingArea(1025884160)
+
+
+RubEditingArea(RubAbstractTextArea)>>beEditableWhile:
+	Receiver: a RubEditingArea(1025884160)
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+					| s |
+					s := self validateTextFrom: aStringOrText.
+					s = ...etc...
+		wasEditable: 	false
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (37@31)
+		owner: 	a TransformWithLayoutMorph(989494528)
+		submorphs: 	an Array(a RubCursor(599221504) a RubPrimarySelectionMorph(494208256...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (768645632) [other:  (announcer -> an Announcer)]
+		model: 	a SpMorphicTextAdapter
+		paragraph: 	a RubCurrentLineBarDecorator
+		editor: 	a RubTextEditor
+		scrollPane: 	a RubTextScrollPane(480924416)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Sans Pro
+		textColor: 	nil
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubPlainTextMode
+		cursor: 	a RubCursor(599221504)
+		segments: 	nil
+		embeddedMorphs: 	nil
+		getMenuPolicy: 	a RubPluggableGetMenuPolicy
+		mouseDownPoint: 	nil
+		completionEngine: 	nil
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubTextEditor
+
+
+[ self
+				beEditableWhile: [ 
+					| s |
+					s := self validateTextFrom: aStringOrText.
+					s = self text
+						ifFalse: [ self selectAll.
+							self editor replaceSelectionWith: s.
+							self deselect ] ] ] in RubEditingArea(RubAbstractTextArea)>>updateTextWith:
+	Receiver: a RubEditingArea(1025884160)
+	Arguments and temporary variables: 
+		aStringOrText: 	''
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (37@31)
+		owner: 	a TransformWithLayoutMorph(989494528)
+		submorphs: 	an Array(a RubCursor(599221504) a RubPrimarySelectionMorph(494208256...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (768645632) [other:  (announcer -> an Announcer)]
+		model: 	a SpMorphicTextAdapter
+		paragraph: 	a RubCurrentLineBarDecorator
+		editor: 	a RubTextEditor
+		scrollPane: 	a RubTextScrollPane(480924416)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Sans Pro
+		textColor: 	nil
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubPlainTextMode
+		cursor: 	a RubCursor(599221504)
+		segments: 	nil
+		embeddedMorphs: 	nil
+		getMenuPolicy: 	a RubPluggableGetMenuPolicy
+		mouseDownPoint: 	nil
+		completionEngine: 	nil
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubTextEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>handleEdit:
+	Receiver: a RubEditingArea(1025884160)
+	Arguments and temporary variables: 
+		editBlock: 	[ self
+				beEditableWhile: [ 
+					| s |
+					s := self validateTex...etc...
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (37@31)
+		owner: 	a TransformWithLayoutMorph(989494528)
+		submorphs: 	an Array(a RubCursor(599221504) a RubPrimarySelectionMorph(494208256...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (768645632) [other:  (announcer -> an Announcer)]
+		model: 	a SpMorphicTextAdapter
+		paragraph: 	a RubCurrentLineBarDecorator
+		editor: 	a RubTextEditor
+		scrollPane: 	a RubTextScrollPane(480924416)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Sans Pro
+		textColor: 	nil
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubPlainTextMode
+		cursor: 	a RubCursor(599221504)
+		segments: 	nil
+		embeddedMorphs: 	nil
+		getMenuPolicy: 	a RubPluggableGetMenuPolicy
+		mouseDownPoint: 	nil
+		completionEngine: 	nil
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubTextEditor
+
+
+
+--- The full stack ---
+Process>>doTerminationFromAnotherProcess
+Process>>terminate
+PhLImageDescriptionUpdater>>terminateProcess
+PhLImageDescriptionUpdater>>image:description:
+PhLImageDescriptionUpdater class>>image:description:
+PhLImageDetailPresenter>>updateImageDescription:
+[ :text | self updateImageDescription: text ] in PhLImageDetailPresenter>>connectPresenters
+FullBlockClosure(BlockClosure)>>cull:
+FullBlockClosure(BlockClosure)>>cull:cull:
+[ :block | block cull: self value cull: oldValue ] in ObservableValueHolder>>valueChanged:
+OrderedCollection>>do:
+ObservableValueHolder>>valueChanged:
+[ | oldValue |
+	oldValue := value.
+	value := anObject.
+	self valueChanged: oldValue ] in ObservableValueHolder>>value:
+FullBlockClosure(BlockClosure)>>ensure:
+ObservableValueHolder>>value:
+SpTextPresenter(SpAbstractTextPresenter)>>text:
+[
+		self presenter text: aString.
+		"Raise an announcement"
+		self presenter changed: #clearUserEdits] in SpMorphicTextAdapter(SpMorphicBaseTextAdapter)>>accept:notifying:
+FullBlockClosure(BlockClosure)>>ensure:
+SpMorphicTextAdapter(SpMorphicBaseTextAdapter)>>accept:notifying:
+SpMorphicTextAdapter>>accept:notifying:
+SpRubScrolledTextMorph(RubScrolledTextMorph)>>acceptTextInModel
+SpRubScrolledTextMorph(RubScrolledTextMorph)>>acceptContents
+SpRubScrolledTextMorph(RubScrolledTextMorph)>>textChanged
+RubTextScrollPane>>textChanged
+RubEditingArea(RubAbstractTextArea)>>paragraphReplacedTextFrom:to:with:
+[ 
+			self composer emphasisHere: textArea emphasisHere.
+			self composer replaceFrom: start to: stop with: aText.
+			self text: self composer text.
+			textArea paragraphWasComposedFrom: start to: stop.
+			textArea paragraphReplacedTextFrom: start to: stop with: aText ] in RubParagraph>>replaceFrom:to:with:
+FullBlockClosure(BlockClosure)>>ensure:
+RubParagraph>>disableDrawingWhile:
+RubParagraph>>replaceFrom:to:with:
+RubCurrentLineBarDecorator(RubParagraphDecorator)>>replaceFrom:to:with:
+RubEditingArea(RubAbstractTextArea)>>privateReplaceFrom:to:with:
+RubTextEditor>>zapSelectionWith:
+RubTextEditor>>replace:with:and:
+RubTextEditor>>replaceSelectionWith:
+[ 
+					| s |
+					s := self validateTextFrom: aStringOrText.
+					s = self text
+						ifFalse: [ self selectAll.
+							self editor replaceSelectionWith: s.
+							self deselect ] ] in [ self
+				beEditableWhile: [ 
+					| s |
+					s := self validateTextFrom: aStringOrText.
+					s = self text
+						ifFalse: [ self selectAll.
+							self editor replaceSelectionWith: s.
+							self deselect ] ] ] in RubEditingArea(RubAbstractTextArea)>>updateTextWith:
+FullBlockClosure(BlockClosure)>>ensure:
+RubEditingArea(RubAbstractTextArea)>>beEditableWhile:
+[ self
+				beEditableWhile: [ 
+					| s |
+					s := self validateTextFrom: aStringOrText.
+					s = self text
+						ifFalse: [ self selectAll.
+							self editor replaceSelectionWith: s.
+							self deselect ] ] ] in RubEditingArea(RubAbstractTextArea)>>updateTextWith:
+RubEditingArea(RubAbstractTextArea)>>handleEdit:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+RubEditingArea(RubAbstractTextArea)>>updateTextWith:
+[ 
+			| t |
+			t := self textArea text copy.
+			self textArea updateTextWith: ''.
+			self textArea updateTextWith: t ] in RubPlainTextMode(RubEditingMode)>>updateTextAreaWhenPlugged
+RubEditingArea(RubAbstractTextArea)>>restoreSelectionIndexesAfter:
+RubPlainTextMode(RubEditingMode)>>updateTextAreaWhenPlugged
+RubPlainTextMode(RubEditingMode)>>plugin:
+RubEditingArea(RubAbstractTextArea)>>editingMode:
+RubEditingArea>>beForPlainText
+SpRubScrolledTextMorph(RubScrolledTextMorph)>>beForPlainText
+SpMorphicTextAdapter(SpMorphicBaseTextAdapter)>>setEditingModeFor:
+SpMorphicTextAdapter>>buildWidget
+SpMorphicTextAdapter(SpAbstractAdapter)>>adapt:
+SpMorphicTextAdapter(SpAbstractMorphicAdapter)>>adapt:
+SpAbstractWidgetLayout>>adapt:bindings:
+SpAbstractWidgetLayout>>buildAdapterFor:bindings:
+SpTextPresenter(SpAbstractPresenter)>>basicBuildAdapterWithLayout:
+SpTextPresenter(SpPresenter)>>basicBuildAdapterWithLayout:
+SpTextPresenter(SpAbstractWidgetPresenter)>>basicBuildAdapterWithLayout:
+[ self basicBuildAdapterWithLayout: aSpecLayout ] in SpTextPresenter(SpAbstractPresenter)>>buildAdapterWithLayout:
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpBindings(DynamicVariable)>>value:during:
+FullBlockClosure(BlockClosure)>>ensure:
+SpBindings(DynamicVariable)>>value:during:
+SpBindings class(DynamicVariable class)>>value:during:
+SpTextPresenter(SpAbstractPresenter)>>buildAdapterWithLayout:
+SpTextPresenter(SpAbstractPresenter)>>buildWithLayout:
+SpTextPresenter(SpAbstractPresenter)>>buildWithSelector:
+SpMorphicGridAdapter(SpMorphicLayoutAdapter)>>buildMorph:constraints:
+SpMorphicGridAdapter>>basicAdd:constraints:to:
+[ :aPanel |
+		self 
+			basicAdd: aPresenter
+			constraints: constraints 
+			to: aPanel ] in SpMorphicGridAdapter(SpMorphicLayoutAdapter)>>add:constraints:
+FullBlockClosure(BlockClosure)>>cull:
+Morph(ProtoObject)>>ifNotNil:
+SpMorphicGridAdapter(SpAbstractAdapter)>>widgetDo:
+SpMorphicGridAdapter(SpMorphicLayoutAdapter)>>add:constraints:
+[ :presenterNameOrLayout :constraints | 
+		"Since a layout can be composed (by other layouts), we can include a 
+		 presenter or a layout" 
+		adapter 
+			add: (self 
+				resolvePresenter: presenterNameOrLayout 
+				presenter: aPresenter 
+				bindings: bindings) 
+			constraints: constraints ] in SpGridLayout(SpExecutableLayout)>>buildAdapterFor:bindings:
+[:each | aBlock value: each value: (self at: each)] in OrderedDictionary>>keysAndValuesDo:
+OrderedDictionary>>keysDo:
+OrderedDictionary>>keysAndValuesDo:
+SpGridLayout(SpExecutableLayout)>>buildAdapterFor:bindings:
+SpBoxLayout(SpExecutableLayout)>>resolvePresenter:presenter:bindings:
+[ :presenterNameOrLayout :constraints | 
+		"Since a layout can be composed (by other layouts), we can include a 
+		 presenter or a layout" 
+		adapter 
+			add: (self 
+				resolvePresenter: presenterNameOrLayout 
+				presenter: aPresenter 
+				bindings: bindings) 
+			constraints: constraints ] in SpBoxLayout(SpExecutableLayout)>>buildAdapterFor:bindings:
+[:each | aBlock value: each value: (self at: each)] in OrderedDictionary>>keysAndValuesDo:
+OrderedDictionary>>keysDo:
+OrderedDictionary>>keysAndValuesDo:
+SpBoxLayout(SpExecutableLayout)>>buildAdapterFor:bindings:
+PhLImageDetailPresenter(SpAbstractPresenter)>>basicBuildAdapterWithLayout:
+PhLImageDetailPresenter(SpPresenter)>>basicBuildAdapterWithLayout:
+[ self basicBuildAdapterWithLayout: aSpecLayout ] in PhLImageDetailPresenter(SpAbstractPresenter)>>buildAdapterWithLayout:
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpBindings(DynamicVariable)>>value:during:
+FullBlockClosure(BlockClosure)>>ensure:
+SpBindings(DynamicVariable)>>value:during:
+SpBindings class(DynamicVariable class)>>value:during:
+PhLImageDetailPresenter(SpAbstractPresenter)>>buildAdapterWithLayout:
+PhLImageDetailPresenter(SpAbstractPresenter)>>buildWithLayout:
+PhLImageDetailPresenter(SpAbstractPresenter)>>buildWithSelector:
+SpMorphicPanedAdapter(SpMorphicLayoutAdapter)>>buildMorph:constraints:
+SpMorphicPanedAdapter>>basicAdd:constraints:to:
+[ :aPanel |
+		self 
+			basicAdd: aPresenter
+			constraints: constraints 
+			to: aPanel ] in SpMorphicPanedAdapter(SpMorphicLayoutAdapter)>>add:constraints:
+FullBlockClosure(BlockClosure)>>cull:
+Morph(ProtoObject)>>ifNotNil:
+SpMorphicPanedAdapter(SpAbstractAdapter)>>widgetDo:
+SpMorphicPanedAdapter(SpMorphicLayoutAdapter)>>add:constraints:
+[ :presenterNameOrLayout :constraints | 
+		"Since a layout can be composed (by other layouts), we can include a 
+		 presenter or a layout" 
+		adapter 
+			add: (self 
+				resolvePresenter: presenterNameOrLayout 
+				presenter: aPresenter 
+				bindings: bindings) 
+			constraints: constraints ] in SpPanedLayout(SpExecutableLayout)>>buildAdapterFor:bindings:
+[:each | aBlock value: each value: (self at: each)] in OrderedDictionary>>keysAndValuesDo:
+OrderedDictionary>>keysDo:
+OrderedDictionary>>keysAndValuesDo:
+SpPanedLayout(SpExecutableLayout)>>buildAdapterFor:bindings:
+SpBoxLayout(SpExecutableLayout)>>resolvePresenter:presenter:bindings:
+[ :presenterNameOrLayout :constraints | 
+		"Since a layout can be composed (by other layouts), we can include a 
+		 presenter or a layout" 
+		adapter 
+			add: (self 
+				resolvePresenter: presenterNameOrLayout 
+				presenter: aPresenter 
+				bindings: bindings) 
+			constraints: constraints ] in SpBoxLayout(SpExecutableLayout)>>buildAdapterFor:bindings:
+[:each | aBlock value: each value: (self at: each)] in OrderedDictionary>>keysAndValuesDo:
+OrderedDictionary>>keysDo:
+OrderedDictionary>>keysAndValuesDo:
+SpBoxLayout(SpExecutableLayout)>>buildAdapterFor:bindings:
+PhLImagesPresenter(SpAbstractPresenter)>>basicBuildAdapterWithLayout:
+PhLImagesPresenter(SpPresenter)>>basicBuildAdapterWithLayout:
+[ self basicBuildAdapterWithLayout: aSpecLayout ] in PhLImagesPresenter(SpAbstractPresenter)>>buildAdapterWithLayout:
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpBindings(DynamicVariable)>>value:during:
+FullBlockClosure(BlockClosure)>>ensure:
+SpBindings(DynamicVariable)>>value:during:
+SpBindings class(DynamicVariable class)>>value:during:
+PhLImagesPresenter(SpAbstractPresenter)>>buildAdapterWithLayout:
+PhLImagesPresenter(SpAbstractPresenter)>>buildWithLayout:
+SpMorphicWorldAdapter>>addPresenterIn:withSpecLayout:
+SpMorphicWorldAdapter(SpAbstractAdapter)>>update:with:
+[:aDependent | aDependent update: anAspect with: anObject] in SpWorldPresenter(Model)>>changed:with:
+DependentsArray>>do:
+SpWorldPresenter(Model)>>changed:with:
+SpWorldPresenter>>addPresenterIn:withSpecLayout:
+SpWorldPresenter(SpWindowPresenter)>>buildWindowWithLayout:presenterLayout:
+SpWorldPresenter(SpWindowPresenter)>>basicBuildWithSpecLayout:
+[ self basicBuildWithSpecLayout: aSpecLayout ] in SpWorldPresenter(SpWindowPresenter)>>buildWithSpecLayout:
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpBindings(DynamicVariable)>>value:during:
+FullBlockClosure(BlockClosure)>>ensure:
+SpBindings(DynamicVariable)>>value:during:
+SpBindings class(DynamicVariable class)>>value:during:
+SpWorldPresenter(SpWindowPresenter)>>buildWithSpecLayout:
+SpWorldPresenter>>openWithLayout:
+SpWorldPresenter(SpWindowPresenter)>>openWith:
+SpWorldPresenter(SpWindowPresenter)>>open
+PharoLauncherApplication>>startFull
+PharoLauncherApplication>>start
+PharoLauncherApplication(SpApplication)>>run
+PharoLauncherApplication class>>openFull
+PhLDeploymentScript class>>openLauncher
+PhLDeploymentScript class>>closeWindowsAndOpenLauncher
+PhLDeploymentScript class>>launcherStartUp
+[ :c | c ifNotNil: [ c launcherStartUp ] ] in PhLStartupManager class>>startUp:
+SortedCollection(OrderedCollection)>>do:
+PhLStartupManager class>>startUp:
+ClassSessionHandler>>startup:
+[ :each | each startup: isImageStarting ] in WorkingSession>>runStartup:
+[aBlock value: each] in [ :each | 
+		[aBlock value: each] 
+			on: Exception
+			do: [ :error | self errorHandler handleError: error] ] in WorkingSession>>runList:do:
+FullBlockClosure(BlockClosure)>>on:do:
+[ :each | 
+		[aBlock value: each] 
+			on: Exception
+			do: [ :error | self errorHandler handleError: error] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>launchSnapshot:andQuit:
+[ isImageStarting := self launchSnapshot: save andQuit: quit.
+	  wait signal. ] in SessionManager>>snapshot:andQuit:
+[self value.
+			"IMPORTANT: Do not step over next line of code. See method comments for details"
+			Processor terminateRealActive] in FullBlockClosure(BlockClosure)>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+
+3 June 2023 4:24:31.685209 pm
+
+VM: unix - x86_64 - linux-gnu - CoInterpreter * VMMaker-tonel.1 uuid: ad0a8882-d297-0d00-90d3-62ff092bce84 Mar 30 2022
+StackToRegisterMappingCogit * VMMaker-tonel.1 uuid: ad0a8882-d297-0d00-90d3-62ff092bce84 Mar 30 2022
+v9.0.14 - Commit: 93600e1 - Date: 2022-03-30 16:40:05 +0200
+
+Image: Pharo10.0.0 [Build information: Pharo-10.0.0+build.514.sha.06180671d95a16c446fe24e3fedb0916c1bcb31a (64 Bit)]
+
+Process>>doTerminationFromAnotherProcess
+	Receiver: a Process in Process>>endProcess
+	Arguments and temporary variables: 
+		outerMost: 	nil
+		ctxt: 	nil
+		oldList: 	nil
+		unwindBlock: 	nil
+	Receiver's instance variables: 
+		nextLink: 	nil
+		suspendedContext: 	Process>>endProcess
+		priority: 	79
+		myList: 	nil
+		name: 	'Pharo Launcher image description save process'
+		env: 	nil
+		effectiveProcess: 	nil
+		terminating: 	true
+		level: 	nil
+
+
+Process>>terminate
+	Receiver: a Process in Process>>endProcess
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		nextLink: 	nil
+		suspendedContext: 	Process>>endProcess
+		priority: 	79
+		myList: 	nil
+		name: 	'Pharo Launcher image description save process'
+		env: 	nil
+		effectiveProcess: 	nil
+		terminating: 	true
+		level: 	nil
+
+
+PhLImageDescriptionUpdater>>terminateProcess
+	Receiver: a PhLImageDescriptionUpdater
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		image: 	Image (Pharo 11.0 - 64bit (stable))
+		description: 	'There is no description'
+		process: 	a Process in Process>>endProcess
+		saveBlock: 	nil
+
+
+PhLImageDescriptionUpdater>>image:description:
+	Receiver: a PhLImageDescriptionUpdater
+	Arguments and temporary variables: 
+		aPhLImage: 	Image (Pharo 11.0 - 64bit (stable))
+		aString: 	'There is no description'
+	Receiver's instance variables: 
+		image: 	Image (Pharo 11.0 - 64bit (stable))
+		description: 	'There is no description'
+		process: 	a Process in Process>>endProcess
+		saveBlock: 	nil
+
+
+PhLImageDescriptionUpdater class>>image:description:
+	Receiver: PhLImageDescriptionUpdater
+	Arguments and temporary variables: 
+		aPhLImage: 	Image (Pharo 11.0 - 64bit (stable))
+		aString: 	'There is no description'
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#doSave->PhLImageDescriptionUpdater>>#doSave #im...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	{PhLImageDescriptionUpdaterMock}
+		name: 	#PhLImageDescriptionUpdater
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'PharoLauncher-Core-Model'
+		Default: 	a PhLImageDescriptionUpdater
+
+
+PhLImageDetailPresenter>>updateImageDescription:
+	Receiver: a PhLImageDetailPresenter
+	Arguments and temporary variables: 
+		text: 	'There is no description'
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SpMorphicBoxAdapter a SpMorphicGridAdapter)
+		announcer: 	an Announcer
+		owner: 	a PhLImagesPresenter
+		adapter: 	nil
+		needRebuild: 	true
+		eventHandler: 	nil
+		application: 	nil
+		focusOrder: 	nil
+		contextKeyBindings: 	an ObservableValueHolder[ nil ]
+		windowIcon: 	an ObservableValueHolder[ nil ]
+		aboutText: 	an ObservableValueHolder[ nil ]
+		askOkToClose: 	an ObservableValueHolder[ false ]
+		titleHolder: 	an ObservableValueHolder[ 'Untitled window' ]
+		additionalSubpresentersMap: 	nil
+		layout: 	an ObservableValueHolder[ a SpBoxLayout ]
+		visible: 	an ObservableValueHolder[ true ]
+		extent: 	an ObservableValueHolder[ nil ]
+		styles: 	#()
+		announcingObject: 	a NewValueHolder[ Image (Pharo 11.0 - 64bit (stable)) ]
+		description: 	a SpTextPresenter
+		imageLabel: 	a SpLabelPresenter
+		template: 	a SpLabelPresenter
+		initializationScript: 	a SpLabelPresenter
+		location: 	a SpLabelPresenter
+		vm: 	a SpTextInputFieldPresenter
+		templateUrl: 	a SpLabelPresenter
+		shouldRunInitializationScript: 	a SpCheckBoxPresenter
+		updating: 	false
+
+
+[ :text | self updateImageDescription: text ] in PhLImageDetailPresenter>>connectPresenters
+	Receiver: a PhLImageDetailPresenter
+	Arguments and temporary variables: 
+		text: 	'There is no description'
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SpMorphicBoxAdapter a SpMorphicGridAdapter)
+		announcer: 	an Announcer
+		owner: 	a PhLImagesPresenter
+		adapter: 	nil
+		needRebuild: 	true
+		eventHandler: 	nil
+		application: 	nil
+		focusOrder: 	nil
+		contextKeyBindings: 	an ObservableValueHolder[ nil ]
+		windowIcon: 	an ObservableValueHolder[ nil ]
+		aboutText: 	an ObservableValueHolder[ nil ]
+		askOkToClose: 	an ObservableValueHolder[ false ]
+		titleHolder: 	an ObservableValueHolder[ 'Untitled window' ]
+		additionalSubpresentersMap: 	nil
+		layout: 	an ObservableValueHolder[ a SpBoxLayout ]
+		visible: 	an ObservableValueHolder[ true ]
+		extent: 	an ObservableValueHolder[ nil ]
+		styles: 	#()
+		announcingObject: 	a NewValueHolder[ Image (Pharo 11.0 - 64bit (stable)) ]
+		description: 	a SpTextPresenter
+		imageLabel: 	a SpLabelPresenter
+		template: 	a SpLabelPresenter
+		initializationScript: 	a SpLabelPresenter
+		location: 	a SpLabelPresenter
+		vm: 	a SpTextInputFieldPresenter
+		templateUrl: 	a SpLabelPresenter
+		shouldRunInitializationScript: 	a SpCheckBoxPresenter
+		updating: 	false
+
+
+FullBlockClosure(BlockClosure)>>cull:
+	Receiver: [ :text | self updateImageDescription: text ]
+	Arguments and temporary variables: 
+		anArg: 	'There is no description'
+	Receiver's instance variables: 
+		outerContext: 	PhLImageDetailPresenter>>connectPresenters
+		startpc: 	a CompiledBlock: [ :text | self updateImageDescription: text ]
+		numArgs: 	1
+		receiver: 	a PhLImageDetailPresenter
+
+
+FullBlockClosure(BlockClosure)>>cull:cull:
+	Receiver: [ :text | self updateImageDescription: text ]
+	Arguments and temporary variables: 
+		firstArg: 	'There is no description'
+		secondArg: 	'There is no description'
+	Receiver's instance variables: 
+		outerContext: 	PhLImageDetailPresenter>>connectPresenters
+		startpc: 	a CompiledBlock: [ :text | self updateImageDescription: text ]
+		numArgs: 	1
+		receiver: 	a PhLImageDetailPresenter
+
+
+[ :block | block cull: self value cull: oldValue ] in ObservableValueHolder>>valueChanged:
+	Receiver: an ObservableValueHolder[ 'There is no description' ]
+	Arguments and temporary variables: 
+		oldValue: 	'There is no description'
+		block: 	[ :text | self updateImageDescription: text ]
+	Receiver's instance variables: 
+		subscriptions: 	an OrderedCollection([ self changed: #getText ] [ :text | self u...etc...
+		lock: 	true
+		value: 	'There is no description'
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection([ self changed: #getText ] [ :text | self updateImageDescription: tex...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :block | block cull: self value cull: oldValue ]
+		index: 	2
+	Receiver's instance variables: 
+		array: 	an Array([ self changed: #getText ] [ :text | self updateImageDescriptio...etc...
+		firstIndex: 	1
+		lastIndex: 	2
+
+
+ObservableValueHolder>>valueChanged:
+	Receiver: an ObservableValueHolder[ 'There is no description' ]
+	Arguments and temporary variables: 
+		oldValue: 	'There is no description'
+	Receiver's instance variables: 
+		subscriptions: 	an OrderedCollection([ self changed: #getText ] [ :text | self u...etc...
+		lock: 	true
+		value: 	'There is no description'
+
+
+[ | oldValue |
+	oldValue := value.
+	value := anObject.
+	self valueChanged: oldValue ] in ObservableValueHolder>>value:
+	Receiver: an ObservableValueHolder[ 'There is no description' ]
+	Arguments and temporary variables: 
+		anObject: 	'There is no description'
+		oldValue: 	'There is no description'
+	Receiver's instance variables: 
+		subscriptions: 	an OrderedCollection([ self changed: #getText ] [ :text | self u...etc...
+		lock: 	true
+		value: 	'There is no description'
+
+
+FullBlockClosure(BlockClosure)>>ensure:
+	Receiver: [ | oldValue |
+	oldValue := value.
+	value := anObject.
+	self valueChanged: oldValue ]
+	Arguments and temporary variables: 
+		aBlock: 	[ lock := false ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	ObservableValueHolder>>value:
+		startpc: 	a CompiledBlock: [ | oldValue |
+	oldValue := value.
+	value := anObject...etc...
+		numArgs: 	0
+		receiver: 	an ObservableValueHolder[ 'There is no description' ]
+
+
+ObservableValueHolder>>value:
+	Receiver: an ObservableValueHolder[ 'There is no description' ]
+	Arguments and temporary variables: 
+		anObject: 	'There is no description'
+	Receiver's instance variables: 
+		subscriptions: 	an OrderedCollection([ self changed: #getText ] [ :text | self u...etc...
+		lock: 	true
+		value: 	'There is no description'
+
+
+SpTextPresenter(SpAbstractTextPresenter)>>text:
+	Receiver: a SpTextPresenter
+	Arguments and temporary variables: 
+		aString: 	'There is no description'
+	Receiver's instance variables: 
+		dependents: 	a DependentsArray(a SpMorphicTextAdapter)
+		announcer: 	an Announcer
+		owner: 	a PhLImageDetailPresenter
+		adapter: 	nil
+		needRebuild: 	true
+		eventHandler: 	nil
+		application: 	nil
+		focusOrder: 	nil
+		contextKeyBindings: 	an ObservableValueHolder[ nil ]
+		windowIcon: 	an ObservableValueHolder[ nil ]
+		aboutText: 	an ObservableValueHolder[ nil ]
+		askOkToClose: 	an ObservableValueHolder[ false ]
+		titleHolder: 	an ObservableValueHolder[ 'Text' ]
+		additionalSubpresentersMap: 	nil
+		layout: 	an ObservableValueHolder[ a SpAbstractWidgetLayout ]
+		visible: 	an ObservableValueHolder[ true ]
+		extent: 	an ObservableValueHolder[ nil ]
+		styles: 	#()
+		borderWidth: 	an ObservableValueHolder[ nil ]
+		borderColor: 	an ObservableValueHolder[ nil ]
+		dragEnabled: 	an ObservableValueHolder[ false ]
+		dropEnabled: 	an ObservableValueHolder[ false ]
+		color: 	an ObservableValueHolder[ nil ]
+		help: 	an ObservableValueHolder[ nil ]
+		enabled: 	an ObservableValueHolder[ true ]
+		wantsDrop: 	an ObservableValueHolder[ [ :transfer | self dropEnabled ] ]
+		acceptDrop: 	an ObservableValueHolder[ [ :transfer | ] ]
+		deferredActions: 	nil
+		hasUnacceptedEdits: 	an ObservableValueHolder[ false ]
+		selection: 	an ObservableValueHolder[ (1 to: 0) ]
+		wantsVisualFeedback: 	an ObservableValueHolder[ true ]
+		askBeforeDiscardingEdits: 	an ObservableValueHolder[ true ]
+		text: 	an ObservableValueHolder[ 'There is no description' ]
+		actionToPerform: 	an ObservableValueHolder[ [ :txt |  ] ]
+		readSelection: 	an ObservableValueHolder[ [ selection ] ]
+		placeholder: 	an ObservableValueHolder[ '' ]
+		contextMenu: 	an ObservableValueHolder[ nil ]
+		scrollValue: 	an ObservableValueHolder[ (0@0) ]
+		editionContextMenu: 	an ObservableValueHolder[ true ]
+		editable: 	an ObservableValueHolder[ true ]
+		wrapWord: 	an ObservableValueHolder[ true ]
+		undoRedoHistory: 	true
+		wrapScrollBars: 	true
+		propagateNaturalHeight: 	false
+		propagateNaturalWidth: 	false
+		scrollBarStyles: 	#()
+
+
+[
+		self presenter text: aString.
+		"Raise an announcement"
+		self presenter changed: #clearUserEdits] in SpMorphicTextAdapter(SpMorphicBaseTextAdapter)>>accept:notifying:
+	Receiver: a SpMorphicTextAdapter
+	Arguments and temporary variables: 
+		aString: 	'There is no description'
+		aNotifyier: 	a SpRubScrolledTextMorph(80463104)
+	Receiver's instance variables: 
+		dependents: 	nil
+		announcer: 	nil
+		model: 	a SpTextPresenter
+		widget: 	nil
+		selector: 	nil
+		owner: 	a SpTextPresenter
+		unsubscribed: 	false
+		selection: 	(1 to: 23)
+		updating: 	true
+
+
+FullBlockClosure(BlockClosure)>>ensure:
+	Receiver: [
+		self presenter text: aString.
+		"Raise an announcement"
+		self presenter changed: #cle...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+		updating := false ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	SpMorphicTextAdapter(SpMorphicBaseTextAdapter)>>accept:notifying:...etc...
+		startpc: 	a CompiledBlock: [
+		self presenter text: aString.
+		"Raise an announc...etc...
+		numArgs: 	0
+		receiver: 	a SpMorphicTextAdapter
+
+
+SpMorphicTextAdapter(SpMorphicBaseTextAdapter)>>accept:notifying:
+	Receiver: a SpMorphicTextAdapter
+	Arguments and temporary variables: 
+		aString: 	'There is no description'
+		aNotifyier: 	a SpRubScrolledTextMorph(80463104)
+	Receiver's instance variables: 
+		dependents: 	nil
+		announcer: 	nil
+		model: 	a SpTextPresenter
+		widget: 	nil
+		selector: 	nil
+		owner: 	a SpTextPresenter
+		unsubscribed: 	false
+		selection: 	(1 to: 23)
+		updating: 	true
+
+
+SpMorphicTextAdapter>>accept:notifying:
+	Receiver: a SpMorphicTextAdapter
+	Arguments and temporary variables: 
+		aString: 	a Text for 'There is no description'
+		aNotifyier: 	a SpRubScrolledTextMorph(80463104)
+	Receiver's instance variables: 
+		dependents: 	nil
+		announcer: 	nil
+		model: 	a SpTextPresenter
+		widget: 	nil
+		selector: 	nil
+		owner: 	a SpTextPresenter
+		unsubscribed: 	false
+		selection: 	(1 to: 23)
+		updating: 	true
+
+
+SpRubScrolledTextMorph(RubScrolledTextMorph)>>acceptTextInModel
+	Receiver: a SpRubScrolledTextMorph(80463104)
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (50@40)
+		owner: 	nil
+		submorphs: 	an Array(a RubTextScrollPane(480924416) a RubGhostTextDisplayer(8449...etc...
+		fullBounds: 	nil
+		color: 	Color white
+		extension: 	a MorphExtension (141469696) [other:  (announcer -> an Announcer) (d...etc...
+		hasEditingConflicts: 	false
+		hasUnacceptedEdits: 	false
+		alwaysAccept: 	nil
+		setTextSelector: 	#accept:notifying:
+		getTextSelector: 	#getText
+		getSelectionSelector: 	#readSelection
+		setSelectionSelector: 	#setSelection:
+		autoAccept: 	true
+		scrollPane: 	a RubTextScrollPane(480924416)
+		rulers: 	a SortedCollection(a RubGhostTextDisplayer(844908288))
+		enabled: 	true
+		highlights: 	an OrderedCollection()
+		getBackgroundColorSelector: 	nil
+		askBeforeDiscardingEdits: 	true
+
+
+SpRubScrolledTextMorph(RubScrolledTextMorph)>>acceptContents
+	Receiver: a SpRubScrolledTextMorph(80463104)
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (50@40)
+		owner: 	nil
+		submorphs: 	an Array(a RubTextScrollPane(480924416) a RubGhostTextDisplayer(8449...etc...
+		fullBounds: 	nil
+		color: 	Color white
+		extension: 	a MorphExtension (141469696) [other:  (announcer -> an Announcer) (d...etc...
+		hasEditingConflicts: 	false
+		hasUnacceptedEdits: 	false
+		alwaysAccept: 	nil
+		setTextSelector: 	#accept:notifying:
+		getTextSelector: 	#getText
+		getSelectionSelector: 	#readSelection
+		setSelectionSelector: 	#setSelection:
+		autoAccept: 	true
+		scrollPane: 	a RubTextScrollPane(480924416)
+		rulers: 	a SortedCollection(a RubGhostTextDisplayer(844908288))
+		enabled: 	true
+		highlights: 	an OrderedCollection()
+		getBackgroundColorSelector: 	nil
+		askBeforeDiscardingEdits: 	true
+
+
+SpRubScrolledTextMorph(RubScrolledTextMorph)>>textChanged
+	Receiver: a SpRubScrolledTextMorph(80463104)
+	Arguments and temporary variables: 
+x
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (50@40)
+		owner: 	nil
+		submorphs: 	an Array(a RubTextScrollPane(480924416) a RubGhostTextDisplayer(8449...etc...
+		fullBounds: 	nil
+		color: 	Color white
+		extension: 	a MorphExtension (141469696) [other:  (announcer -> an Announcer) (d...etc...
+		hasEditingConflicts: 	false
+		hasUnacceptedEdits: 	false
+		alwaysAccept: 	nil
+		setTextSelector: 	#accept:notifying:
+		getTextSelector: 	#getText
+		getSelectionSelector: 	#readSelection
+		setSelectionSelector: 	#setSelection:
+		autoAccept: 	true
+		scrollPane: 	a RubTextScrollPane(480924416)
+		rulers: 	a SortedCollection(a RubGhostTextDisplayer(844908288))
+		enabled: 	true
+		highlights: 	an OrderedCollection()
+		getBackgroundColorSelector: 	nil
+		askBeforeDiscardingEdits: 	true
+
+
+RubTextScrollPane>>textChanged
+	Receiver: a RubTextScrollPane(480924416)
+	Arguments and temporary variables: 
+		o: 	a SpRubScrolledTextMorph(80463104)
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (50@40)
+		owner: 	a SpRubScrolledTextMorph(80463104)
+		submorphs: 	an Array(a RubScrollBar(981101056) a TransformWithLayoutMorph(989494...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (324119808) [other:  (announcer -> an Announcer)]
+		scroller: 	a TransformWithLayoutMorph(989494528)
+		hScrollbar: 	a RubScrollBar(392835584)
+		vScrollbar: 	a RubScrollBar(981101056)
+		drawFocusBorder: 	true
+
+
+RubEditingArea(RubAbstractTextArea)>>paragraphReplacedTextFrom:to:with:
+	Receiver: a RubEditingArea(1025884160)
+	Arguments and temporary variables: 
+		start: 	1
+		stop: 	23
+		aText: 	a Text for 'There is no description'
+		sp: 	a RubTextScrollPane(480924416)
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (37@126)
+		owner: 	a TransformWithLayoutMorph(989494528)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(491071488) a RubCursor(599221504...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (768645632) [other:  (announcer -> an Announcer)]
+		model: 	a SpMorphicTextAdapter
+		paragraph: 	a RubCurrentLineBarDecorator
+		editor: 	a RubTextEditor
+		scrollPane: 	a RubTextScrollPane(480924416)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Sans Pro
+		textColor: 	nil
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubPlainTextMode
+		cursor: 	a RubCursor(599221504)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	nil
+		getMenuPolicy: 	a RubPluggableGetMenuPolicy
+		mouseDownPoint: 	nil
+		completionEngine: 	nil
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubTextEditor
+
+
+[ 
+			self composer emphasisHere: textArea emphasisHere.
+			self composer replaceFrom: start to: stop with: aText.
+			self text: self composer text.
+			textArea paragraphWasComposedFrom: start to: stop.
+			textArea paragraphReplacedTextFrom: start to: stop with: aText ] in RubParagraph>>replaceFrom:to:with:
+	Receiver: a RubParagraph
+	Arguments and temporary variables: 
+		start: 	1
+		stop: 	23
+		aText: 	a Text for 'There is no description'
+	Receiver's instance variables: 
+		text: 	a Text for 'There is no description'
+		composer: 	a RubTextComposer
+		container: 	(0@0) corner: (37@126)
+		drawingEnabled: 	false
+		textArea: 	a RubEditingArea(1025884160)
+
+
+FullBlockClosure(BlockClosure)>>ensure:
+	Receiver: [ 
+			self composer emphasisHere: textArea emphasisHere.
+			self composer replaceFrom: sta...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ self enableDrawing ]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	RubParagraph>>replaceFrom:to:with:
+		startpc: 	a CompiledBlock: [ 
+			self composer emphasisHere: textArea emphasisHe...etc...
+		numArgs: 	0
+		receiver: 	a RubParagraph
+
+
+RubParagraph>>disableDrawingWhile:
+	Receiver: a RubParagraph
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+			self composer emphasisHere: textArea emphasisHere.
+			self compos...etc...
+	Receiver's instance variables: 
+		text: 	a Text for 'There is no description'
+		composer: 	a RubTextComposer
+		container: 	(0@0) corner: (37@126)
+		drawingEnabled: 	false
+		textArea: 	a RubEditingArea(1025884160)
+
+
+RubParagraph>>replaceFrom:to:with:
+	Receiver: a RubParagraph
+	Arguments and temporary variables: 
+		start: 	1
+		stop: 	23
+		aText: 	a Text for 'There is no description'
+	Receiver's instance variables: 
+		text: 	a Text for 'There is no description'
+		composer: 	a RubTextComposer
+		container: 	(0@0) corner: (37@126)
+		drawingEnabled: 	false
+		textArea: 	a RubEditingArea(1025884160)
+
+
+RubCurrentLineBarDecorator(RubParagraphDecorator)>>replaceFrom:to:with:
+	Receiver: a RubCurrentLineBarDecorator
+	Arguments and temporary variables: 
+		start: 	1
+		stop: 	23
+		aText: 	a Text for 'There is no description'
+	Receiver's instance variables: 
+		next: 	a RubExtraSelectionDecorator
+
+
+RubEditingArea(RubAbstractTextArea)>>privateReplaceFrom:to:with:
+	Receiver: a RubEditingArea(1025884160)
+	Arguments and temporary variables: 
+		start: 	1
+		stop: 	23
+		aText: 	a Text for 'There is no description'
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (37@126)
+		owner: 	a TransformWithLayoutMorph(989494528)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(491071488) a RubCursor(599221504...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (768645632) [other:  (announcer -> an Announcer)]
+		model: 	a SpMorphicTextAdapter
+		paragraph: 	a RubCurrentLineBarDecorator
+		editor: 	a RubTextEditor
+		scrollPane: 	a RubTextScrollPane(480924416)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Sans Pro
+		textColor: 	nil
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubPlainTextMode
+		cursor: 	a RubCursor(599221504)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	nil
+		getMenuPolicy: 	a RubPluggableGetMenuPolicy
+		mouseDownPoint: 	nil
+		completionEngine: 	nil
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubTextEditor
+
+
+RubTextEditor>>zapSelectionWith:
+	Receiver: a RubTextEditor
+	Arguments and temporary variables: 
+		aText: 	'There is no description'
+		start: 	1
+		stop: 	24
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	nil
+		textArea: 	a RubEditingArea(1025884160)
+
+
+RubTextEditor>>replace:with:and:
+	Receiver: a RubTextEditor
+	Arguments and temporary variables: 
+		xoldInterval: 	(1 to: 23)
+		newText: 	'There is no description'
+		selectingBlock: 	[]
+		prevSel: 	a Text for 'There is no description'
+		currInterval: 	(1 to: 23)
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	nil
+		textArea: 	a RubEditingArea(1025884160)
+
+
+RubTextEditor>>replaceSelectionWith:
+	Receiver: a RubTextEditor
+	Arguments and temporary variables: 
+		aText: 	'There is no description'
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	nil
+		textArea: 	a RubEditingArea(1025884160)
+
+
+[ 
+					| s |
+					s := self validateTextFrom: aStringOrText.
+					s = self text
+						ifFalse: [ self selectAll.
+							self editor replaceSelectionWith: s.
+							self deselect ] ] in [ self
+				beEditableWhile: [ 
+					| s |
+					s := self validateTextFrom: aStringOrText.
+					s = self text
+						ifFalse: [ self selectAll.
+							self editor replaceSelectionWith: s.
+							self deselect ] ] ] in RubEditingArea(RubAbstractTextArea)>>updateTextWith:
+	Receiver: a RubEditingArea(1025884160)
+	Arguments and temporary variables: 
+		aStringOrText: 	'There is no description'
+		s: 	'There is no description'
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (37@126)
+		owner: 	a TransformWithLayoutMorph(989494528)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(491071488) a RubCursor(599221504...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (768645632) [other:  (announcer -> an Announcer)]
+		model: 	a SpMorphicTextAdapter
+		paragraph: 	a RubCurrentLineBarDecorator
+		editor: 	a RubTextEditor
+		scrollPane: 	a RubTextScrollPane(480924416)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Sans Pro
+		textColor: 	nil
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubPlainTextMode
+		cursor: 	a RubCursor(599221504)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	nil
+		getMenuPolicy: 	a RubPluggableGetMenuPolicy
+		mouseDownPoint: 	nil
+		completionEngine: 	nil
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubTextEditor
+
+
+FullBlockClosure(BlockClosure)>>ensure:
+	Receiver: [ 
+					| s |
+					s := self validateTextFrom: aStringOrText.
+					s = self text
+						ifF...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ self readOnly:  wasEditable]
+		complete: 	nil
+		returnValue: 	nil
+	Receiver's instance variables: 
+		outerContext: 	[ self
+				beEditableWhile: [ 
+					| s |
+					s := self validate...etc...
+		startpc: 	a CompiledBlock: [ 
+					| s |
+					s := self validateTextFrom: aStrin...etc...
+		numArgs: 	0
+		receiver: 	a RubEditingArea(1025884160)
+
+
+RubEditingArea(RubAbstractTextArea)>>beEditableWhile:
+	Receiver: a RubEditingArea(1025884160)
+	Arguments and temporary variables: 
+		aBlock: 	[ 
+					| s |
+					s := self validateTextFrom: aStringOrText.
+					s = ...etc...
+		wasEditable: 	false
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (37@126)
+		owner: 	a TransformWithLayoutMorph(989494528)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(491071488) a RubCursor(599221504...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (768645632) [other:  (announcer -> an Announcer)]
+		model: 	a SpMorphicTextAdapter
+		paragraph: 	a RubCurrentLineBarDecorator
+		editor: 	a RubTextEditor
+		scrollPane: 	a RubTextScrollPane(480924416)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Sans Pro
+		textColor: 	nil
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubPlainTextMode
+		cursor: 	a RubCursor(599221504)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	nil
+		getMenuPolicy: 	a RubPluggableGetMenuPolicy
+		mouseDownPoint: 	nil
+		completionEngine: 	nil
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubTextEditor
+
+
+[ self
+				beEditableWhile: [ 
+					| s |
+					s := self validateTextFrom: aStringOrText.
+					s = self text
+						ifFalse: [ self selectAll.
+							self editor replaceSelectionWith: s.
+							self deselect ] ] ] in RubEditingArea(RubAbstractTextArea)>>updateTextWith:
+	Receiver: a RubEditingArea(1025884160)
+	Arguments and temporary variables: 
+		aStringOrText: 	'There is no description'
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (37@126)
+		owner: 	a TransformWithLayoutMorph(989494528)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(491071488) a RubCursor(599221504...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (768645632) [other:  (announcer -> an Announcer)]
+		model: 	a SpMorphicTextAdapter
+		paragraph: 	a RubCurrentLineBarDecorator
+		editor: 	a RubTextEditor
+		scrollPane: 	a RubTextScrollPane(480924416)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Sans Pro
+		textColor: 	nil
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubPlainTextMode
+		cursor: 	a RubCursor(599221504)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	nil
+		getMenuPolicy: 	a RubPluggableGetMenuPolicy
+		mouseDownPoint: 	nil
+		completionEngine: 	nil
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubTextEditor
+
+
+RubEditingArea(RubAbstractTextArea)>>handleEdit:
+	Receiver: a RubEditingArea(1025884160)
+	Arguments and temporary variables: 
+		editBlock: 	[ self
+				beEditableWhile: [ 
+					| s |
+					s := self validateTex...etc...
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (37@126)
+		owner: 	a TransformWithLayoutMorph(989494528)
+		submorphs: 	an Array(a RubPrimarySelectionMorph(491071488) a RubCursor(599221504...etc...
+		fullBounds: 	nil
+		color: 	Color transparent
+		extension: 	a MorphExtension (768645632) [other:  (announcer -> an Announcer)]
+		model: 	a SpMorphicTextAdapter
+		paragraph: 	a RubCurrentLineBarDecorator
+		editor: 	a RubTextEditor
+		scrollPane: 	a RubTextScrollPane(480924416)
+		editingState: 	a RubEditingState
+		textStyle: 	a TextStyle Source Sans Pro
+		textColor: 	nil
+		margins: 	a Margin top: 6 left: 6 bottom: 6 right: 6
+		readOnly: 	false
+		menuAllowed: 	nil
+		editingMode: 	a RubPlainTextMode
+		cursor: 	a RubCursor(599221504)
+		segments: 	an OrderedCollection()
+		embeddedMorphs: 	nil
+		getMenuPolicy: 	a RubPluggableGetMenuPolicy
+		mouseDownPoint: 	nil
+		completionEngine: 	nil
+		maxLength: 	nil
+		findReplaceService: 	a SpRubFindReplaceService
+		wrapped: 	true
+		editorClass: 	RubTextEditor
+
+
+
+--- The full stack ---
+Process>>doTerminationFromAnotherProcess
+Process>>terminate
+PhLImageDescriptionUpdater>>terminateProcess
+PhLImageDescriptionUpdater>>image:description:
+PhLImageDescriptionUpdater class>>image:description:
+PhLImageDetailPresenter>>updateImageDescription:
+[ :text | self updateImageDescription: text ] in PhLImageDetailPresenter>>connectPresenters
+FullBlockClosure(BlockClosure)>>cull:
+FullBlockClosure(BlockClosure)>>cull:cull:
+[ :block | block cull: self value cull: oldValue ] in ObservableValueHolder>>valueChanged:
+OrderedCollection>>do:
+ObservableValueHolder>>valueChanged:
+[ | oldValue |
+	oldValue := value.
+	value := anObject.
+	self valueChanged: oldValue ] in ObservableValueHolder>>value:
+FullBlockClosure(BlockClosure)>>ensure:
+ObservableValueHolder>>value:
+SpTextPresenter(SpAbstractTextPresenter)>>text:
+[
+		self presenter text: aString.
+		"Raise an announcement"
+		self presenter changed: #clearUserEdits] in SpMorphicTextAdapter(SpMorphicBaseTextAdapter)>>accept:notifying:
+FullBlockClosure(BlockClosure)>>ensure:
+SpMorphicTextAdapter(SpMorphicBaseTextAdapter)>>accept:notifying:
+SpMorphicTextAdapter>>accept:notifying:
+SpRubScrolledTextMorph(RubScrolledTextMorph)>>acceptTextInModel
+SpRubScrolledTextMorph(RubScrolledTextMorph)>>acceptContents
+SpRubScrolledTextMorph(RubScrolledTextMorph)>>textChanged
+RubTextScrollPane>>textChanged
+RubEditingArea(RubAbstractTextArea)>>paragraphReplacedTextFrom:to:with:
+[ 
+			self composer emphasisHere: textArea emphasisHere.
+			self composer replaceFrom: start to: stop with: aText.
+			self text: self composer text.
+			textArea paragraphWasComposedFrom: start to: stop.
+			textArea paragraphReplacedTextFrom: start to: stop with: aText ] in RubParagraph>>replaceFrom:to:with:
+FullBlockClosure(BlockClosure)>>ensure:
+RubParagraph>>disableDrawingWhile:
+RubParagraph>>replaceFrom:to:with:
+RubCurrentLineBarDecorator(RubParagraphDecorator)>>replaceFrom:to:with:
+RubEditingArea(RubAbstractTextArea)>>privateReplaceFrom:to:with:
+RubTextEditor>>zapSelectionWith:
+RubTextEditor>>replace:with:and:
+RubTextEditor>>replaceSelectionWith:
+[ 
+					| s |
+					s := self validateTextFrom: aStringOrText.
+					s = self text
+						ifFalse: [ self selectAll.
+							self editor replaceSelectionWith: s.
+							self deselect ] ] in [ self
+				beEditableWhile: [ 
+					| s |
+					s := self validateTextFrom: aStringOrText.
+					s = self text
+						ifFalse: [ self selectAll.
+							self editor replaceSelectionWith: s.
+							self deselect ] ] ] in RubEditingArea(RubAbstractTextArea)>>updateTextWith:
+FullBlockClosure(BlockClosure)>>ensure:
+RubEditingArea(RubAbstractTextArea)>>beEditableWhile:
+[ self
+				beEditableWhile: [ 
+					| s |
+					s := self validateTextFrom: aStringOrText.
+					s = self text
+						ifFalse: [ self selectAll.
+							self editor replaceSelectionWith: s.
+							self deselect ] ] ] in RubEditingArea(RubAbstractTextArea)>>updateTextWith:
+RubEditingArea(RubAbstractTextArea)>>handleEdit:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+RubEditingArea(RubAbstractTextArea)>>updateTextWith:
+RubTextScrollPane>>updateTextWith:
+SpRubScrolledTextMorph(RubScrolledTextMorph)>>updateTextWith:
+SpRubScrolledTextMorph(RubScrolledTextMorph)>>setText:
+SpMorphicTextAdapter>>setText:to:
+SpMorphicTextAdapter>>buildWidget
+SpMorphicTextAdapter(SpAbstractAdapter)>>adapt:
+SpMorphicTextAdapter(SpAbstractMorphicAdapter)>>adapt:
+SpAbstractWidgetLayout>>adapt:bindings:
+SpAbstractWidgetLayout>>buildAdapterFor:bindings:
+SpTextPresenter(SpAbstractPresenter)>>basicBuildAdapterWithLayout:
+SpTextPresenter(SpPresenter)>>basicBuildAdapterWithLayout:
+SpTextPresenter(SpAbstractWidgetPresenter)>>basicBuildAdapterWithLayout:
+[ self basicBuildAdapterWithLayout: aSpecLayout ] in SpTextPresenter(SpAbstractPresenter)>>buildAdapterWithLayout:
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpBindings(DynamicVariable)>>value:during:
+FullBlockClosure(BlockClosure)>>ensure:
+SpBindings(DynamicVariable)>>value:during:
+SpBindings class(DynamicVariable class)>>value:during:
+SpTextPresenter(SpAbstractPresenter)>>buildAdapterWithLayout:
+SpTextPresenter(SpAbstractPresenter)>>buildWithLayout:
+SpTextPresenter(SpAbstractPresenter)>>buildWithSelector:
+SpMorphicGridAdapter(SpMorphicLayoutAdapter)>>buildMorph:constraints:
+SpMorphicGridAdapter>>basicAdd:constraints:to:
+[ :aPanel |
+		self 
+			basicAdd: aPresenter
+			constraints: constraints 
+			to: aPanel ] in SpMorphicGridAdapter(SpMorphicLayoutAdapter)>>add:constraints:
+FullBlockClosure(BlockClosure)>>cull:
+Morph(ProtoObject)>>ifNotNil:
+SpMorphicGridAdapter(SpAbstractAdapter)>>widgetDo:
+SpMorphicGridAdapter(SpMorphicLayoutAdapter)>>add:constraints:
+[ :presenterNameOrLayout :constraints | 
+		"Since a layout can be composed (by other layouts), we can include a 
+		 presenter or a layout" 
+		adapter 
+			add: (self 
+				resolvePresenter: presenterNameOrLayout 
+				presenter: aPresenter 
+				bindings: bindings) 
+			constraints: constraints ] in SpGridLayout(SpExecutableLayout)>>buildAdapterFor:bindings:
+[:each | aBlock value: each value: (self at: each)] in OrderedDictionary>>keysAndValuesDo:
+OrderedDictionary>>keysDo:
+OrderedDictionary>>keysAndValuesDo:
+SpGridLayout(SpExecutableLayout)>>buildAdapterFor:bindings:
+SpBoxLayout(SpExecutableLayout)>>resolvePresenter:presenter:bindings:
+[ :presenterNameOrLayout :constraints | 
+		"Since a layout can be composed (by other layouts), we can include a 
+		 presenter or a layout" 
+		adapter 
+			add: (self 
+				resolvePresenter: presenterNameOrLayout 
+				presenter: aPresenter 
+				bindings: bindings) 
+			constraints: constraints ] in SpBoxLayout(SpExecutableLayout)>>buildAdapterFor:bindings:
+[:each | aBlock value: each value: (self at: each)] in OrderedDictionary>>keysAndValuesDo:
+OrderedDictionary>>keysDo:
+OrderedDictionary>>keysAndValuesDo:
+SpBoxLayout(SpExecutableLayout)>>buildAdapterFor:bindings:
+PhLImageDetailPresenter(SpAbstractPresenter)>>basicBuildAdapterWithLayout:
+PhLImageDetailPresenter(SpPresenter)>>basicBuildAdapterWithLayout:
+[ self basicBuildAdapterWithLayout: aSpecLayout ] in PhLImageDetailPresenter(SpAbstractPresenter)>>buildAdapterWithLayout:
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpBindings(DynamicVariable)>>value:during:
+FullBlockClosure(BlockClosure)>>ensure:
+SpBindings(DynamicVariable)>>value:during:
+SpBindings class(DynamicVariable class)>>value:during:
+PhLImageDetailPresenter(SpAbstractPresenter)>>buildAdapterWithLayout:
+PhLImageDetailPresenter(SpAbstractPresenter)>>buildWithLayout:
+PhLImageDetailPresenter(SpAbstractPresenter)>>buildWithSelector:
+SpMorphicPanedAdapter(SpMorphicLayoutAdapter)>>buildMorph:constraints:
+SpMorphicPanedAdapter>>basicAdd:constraints:to:
+[ :aPanel |
+		self 
+			basicAdd: aPresenter
+			constraints: constraints 
+			to: aPanel ] in SpMorphicPanedAdapter(SpMorphicLayoutAdapter)>>add:constraints:
+FullBlockClosure(BlockClosure)>>cull:
+Morph(ProtoObject)>>ifNotNil:
+SpMorphicPanedAdapter(SpAbstractAdapter)>>widgetDo:
+SpMorphicPanedAdapter(SpMorphicLayoutAdapter)>>add:constraints:
+[ :presenterNameOrLayout :constraints | 
+		"Since a layout can be composed (by other layouts), we can include a 
+		 presenter or a layout" 
+		adapter 
+			add: (self 
+				resolvePresenter: presenterNameOrLayout 
+				presenter: aPresenter 
+				bindings: bindings) 
+			constraints: constraints ] in SpPanedLayout(SpExecutableLayout)>>buildAdapterFor:bindings:
+[:each | aBlock value: each value: (self at: each)] in OrderedDictionary>>keysAndValuesDo:
+OrderedDictionary>>keysDo:
+OrderedDictionary>>keysAndValuesDo:
+SpPanedLayout(SpExecutableLayout)>>buildAdapterFor:bindings:
+SpBoxLayout(SpExecutableLayout)>>resolvePresenter:presenter:bindings:
+[ :presenterNameOrLayout :constraints | 
+		"Since a layout can be composed (by other layouts), we can include a 
+		 presenter or a layout" 
+		adapter 
+			add: (self 
+				resolvePresenter: presenterNameOrLayout 
+				presenter: aPresenter 
+				bindings: bindings) 
+			constraints: constraints ] in SpBoxLayout(SpExecutableLayout)>>buildAdapterFor:bindings:
+[:each | aBlock value: each value: (self at: each)] in OrderedDictionary>>keysAndValuesDo:
+OrderedDictionary>>keysDo:
+OrderedDictionary>>keysAndValuesDo:
+SpBoxLayout(SpExecutableLayout)>>buildAdapterFor:bindings:
+PhLImagesPresenter(SpAbstractPresenter)>>basicBuildAdapterWithLayout:
+PhLImagesPresenter(SpPresenter)>>basicBuildAdapterWithLayout:
+[ self basicBuildAdapterWithLayout: aSpecLayout ] in PhLImagesPresenter(SpAbstractPresenter)>>buildAdapterWithLayout:
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpBindings(DynamicVariable)>>value:during:
+FullBlockClosure(BlockClosure)>>ensure:
+SpBindings(DynamicVariable)>>value:during:
+SpBindings class(DynamicVariable class)>>value:during:
+PhLImagesPresenter(SpAbstractPresenter)>>buildAdapterWithLayout:
+PhLImagesPresenter(SpAbstractPresenter)>>buildWithLayout:
+SpMorphicWorldAdapter>>addPresenterIn:withSpecLayout:
+SpMorphicWorldAdapter(SpAbstractAdapter)>>update:with:
+[:aDependent | aDependent update: anAspect with: anObject] in SpWorldPresenter(Model)>>changed:with:
+DependentsArray>>do:
+SpWorldPresenter(Model)>>changed:with:
+SpWorldPresenter>>addPresenterIn:withSpecLayout:
+SpWorldPresenter(SpWindowPresenter)>>buildWindowWithLayout:presenterLayout:
+SpWorldPresenter(SpWindowPresenter)>>basicBuildWithSpecLayout:
+[ self basicBuildWithSpecLayout: aSpecLayout ] in SpWorldPresenter(SpWindowPresenter)>>buildWithSpecLayout:
+[ activeProcess
+			psValueAt: index
+			put: anObject.
+		aBlock value ] in SpBindings(DynamicVariable)>>value:during:
+FullBlockClosure(BlockClosure)>>ensure:
+SpBindings(DynamicVariable)>>value:during:
+SpBindings class(DynamicVariable class)>>value:during:
+SpWorldPresenter(SpWindowPresenter)>>buildWithSpecLayout:
+SpWorldPresenter>>openWithLayout:
+SpWorldPresenter(SpWindowPresenter)>>openWith:
+SpWorldPresenter(SpWindowPresenter)>>open
+PharoLauncherApplication>>startFull
+PharoLauncherApplication>>start
+PharoLauncherApplication(SpApplication)>>run
+PharoLauncherApplication class>>openFull
+PhLDeploymentScript class>>openLauncher
+PhLDeploymentScript class>>closeWindowsAndOpenLauncher
+PhLDeploymentScript class>>launcherStartUp
+[ :c | c ifNotNil: [ c launcherStartUp ] ] in PhLStartupManager class>>startUp:
+SortedCollection(OrderedCollection)>>do:
+PhLStartupManager class>>startUp:
+ClassSessionHandler>>startup:
+[ :each | each startup: isImageStarting ] in WorkingSession>>runStartup:
+[aBlock value: each] in [ :each | 
+		[aBlock value: each] 
+			on: Exception
+			do: [ :error | self errorHandler handleError: error] ] in WorkingSession>>runList:do:
+FullBlockClosure(BlockClosure)>>on:do:
+[ :each | 
+		[aBlock value: each] 
+			on: Exception
+			do: [ :error | self errorHandler handleError: error] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>launchSnapshot:andQuit:
+[ isImageStarting := self launchSnapshot: save andQuit: quit.
+	  wait signal. ] in SessionManager>>snapshot:andQuit:
+[self value.
+			"IMPORTANT: Do not step over next line of code. See method comments for details"
+			Processor terminateRealActive] in FullBlockClosure(BlockClosure)>>newProcess
+-------------------------------------------------------------------------------
+
