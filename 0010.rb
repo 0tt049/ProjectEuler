@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-require 'prime'
 #
 # Summation of Primes
 #
@@ -7,8 +6,9 @@ require 'prime'
 #
 # Find the sum of all the primes below two million.
 
-# First solution => (2..2_00_00).filter { |i| Prime.prime?(i) }.sum
+# First solution => (2..2_000_000).filter { |i| Prime.prime?(i) }.sum
 #
 # Much better solution:
+require 'prime'
 
-(Prime.to_a 2_000_000).sum ## 🙀
+(Prime.to_a 2_000_000).sum ### 🙀
